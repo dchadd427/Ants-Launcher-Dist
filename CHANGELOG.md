@@ -4,6 +4,16 @@ All notable changes to the Ants & Uncles Launcher will be documented here.
 
 ---
 
+## [2.0.3] — 2026-03-15
+
+### 🐛 Bug Fixes
+
+- **Global Chat Real-Time Delivery** — Fixed a bug where other users couldn't see your chat messages until they relogged. Messages are now broadcast instantly via WebSocket instead of relying solely on 3-second polling
+- **Same-Second Message Loss** — Fixed a database timestamp precision issue that permanently dropped messages sent in the same second as the last polled message
+- **Sidebar Player Rendering** — Fixed sidebar not correctly updating player information after lobby state changes
+
+---
+
 ## [2.0.1] — 2026-03-14
 
 ### 🐛 Bug Fixes
