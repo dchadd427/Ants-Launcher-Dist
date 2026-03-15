@@ -4,6 +4,15 @@ All notable changes to the Ants & Uncles Launcher will be documented here.
 
 ---
 
+## [2.0.5] — 2026-03-15
+
+### ✨ Improvements
+
+- **Display Name Switcher** — The display name toggle now correctly lets you choose between your **Discord Global Display Name** (e.g., `dAwGy`) and your **Server Nickname**, rather than defaulting to your raw `@username` handle. 
+- **UI Clarification** — Renamed "Discord Name" to "Discord Display Name" in the profile settings, and updated the preview text to accurately show your global display name instead of your `@handle`.
+
+---
+
 ## [2.0.4] — 2026-03-15
 
 ### 🐛 Bug Fixes
