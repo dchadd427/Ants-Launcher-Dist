@@ -10,7 +10,13 @@ All notable changes to the Ants & Uncles Launcher will be documented here.
 
 - **Global Chat Real-Time Delivery** — Fixed a bug where other users couldn't see your chat messages until they relogged. Messages are now broadcast instantly via WebSocket instead of relying solely on 3-second polling
 - **Same-Second Message Loss** — Fixed a database timestamp precision issue that permanently dropped messages sent in the same second as the last polled message
+- **UUID Assignment on Login** — Fixed pre-migration user profiles (e.g. empty `public_id`) not being backfilled with a UUID on login
 - **Sidebar Player Rendering** — Fixed sidebar not correctly updating player information after lobby state changes
+
+### 🔒 Security & Privacy
+
+- **Moderation Log Privacy** — Moderation actions (ban, mute, kick) now store public UUIDs instead of raw Discord IDs in the audit trail
+- **Role Detection Refactor** — Admin/moderator status is now determined by matching specific Discord role IDs instead of scanning permission bits. Results are cached for 5 minutes to reduce Discord API calls
 
 ---
 
