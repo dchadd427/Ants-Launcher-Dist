@@ -4,6 +4,16 @@ All notable changes to the Ants & Uncles Launcher will be documented here.
 
 ---
 
+## [2.0.4] — 2026-03-15
+
+### 🐛 Bug Fixes
+
+- **Display Name Resolution** — Fixed a bug where toggling between display name sources didn't sync instantly or failed if you bypassed Discord OAuth due to cached tokens. The API now explicitly tracks both Global Display Names and Server Nicknames in the database.
+- **Removed Custom Display Name** — Removed the custom name text input in favor of using Discord's native "Global Display Name" and "Server Nickname".
+- **Anti-Impersonation Tooltip** — Hovering over any player's name in the lobby now displays their unique Discord `@handle` in a tooltip to prevent impersonation.
+
+---
+
 ## [2.0.3] — 2026-03-15
 
 ### 🐛 Bug Fixes
