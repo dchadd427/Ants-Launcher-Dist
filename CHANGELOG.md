@@ -4,6 +4,26 @@ All notable changes to the Ants & Uncles Launcher will be documented here.
 
 ---
 
+## [2.0.1] — 2026-03-14
+
+### 🐛 Bug Fixes
+
+- **Chat Recovery** — Fixed chat messages not saving to or loading from the database (MariaDB prepared statement compatibility fix)
+- **Lobby Rejoin** — Fixed chat window not opening when quickly leaving and rejoining the same lobby
+
+### 🔒 Security & Privacy
+
+- **UUID Primary Keys** — All database tables now use random UUIDs instead of sequential auto-increment IDs
+- **Public Player IDs** — Players are now identified by a public UUID; Discord IDs are never exposed to other clients in chat messages or player lists
+
+### ✨ Improvements
+
+- **Match History Recording** — Game matches are now logged to the database on launch, capturing players, colors, lobby name, host, and timestamp
+- **Kick Logging** — Admin/moderator kicks are now recorded in the moderation audit trail
+- **Server Restart Script** — Added `npm restart` command for quick server reboots
+
+---
+
 ## [2.0.0] — 2026-03-14
 
 ### 🚀 Major Release
