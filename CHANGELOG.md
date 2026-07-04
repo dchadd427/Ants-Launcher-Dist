@@ -4,6 +4,15 @@ All notable changes to the Ants & Uncles Launcher will be documented here.
 
 ---
 
+## [2.3.0] — 2026-07-04
+
+### 🐛 Bug Fixes
+
+- **Match History Public ID Routing** — Fixed a bug where the "View Match History" button/context menu in both the main lobby (sidebar) and the game lobby (lobby panel) was redirecting to the user's numeric Discord ID rather than their public UUID, leading to a 404 Not Found error on the player profile page.
+- **Discord ID Redirect Fallback** — Enhanced the server profile lookup route `/player/:publicId` to recognize legacy numeric Discord IDs, query the database `user_profiles` table, and automatically issue an HTTP 302 Redirect to their public UUID `/player/<public_id>`.
+
+---
+
 ## [2.0.5] — 2026-03-15
 
 ### ✨ Improvements
